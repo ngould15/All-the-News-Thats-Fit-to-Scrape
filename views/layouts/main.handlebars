@@ -1,57 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--jQuery Link-->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!--Bootstrap Links-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<html>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--CSS Style Sheet-->
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 
-
-<head>
-
-    <title>All the News That's Fit to Scrape</title>
-
-    <!-- BOOTSTRAP - Latest compiled and minified CSS -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- JQuery -->
-
-    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-
-    <!-- BOOTSTRAP - Latest compiled and minified JavaScript -->
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Custom CSS -->
-
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-
-    {{!-- Custom Javascript --}}
-
-    <script type="text/javascript" src="/javascript/app.js"></script>
-
-<body>
-
-    <div class="container">
-
-        <div class="page-header">
-
-            <img src = "/images/scraper.jpg" alt="Good News, Inspiring, Positive Stories" class="center-block">
-
-            <h1 class="text-center text-primary">"All the News That's Fit to Scrape"</h1>
-
+        <title>Mongo Article Scraper!</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Mongo Scraper</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/saved">Saved Articles</a></li>
+                    <li><button type="button" class="btn btn-primary" id="scrape">Scrape Articles</button></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    {{{ body }}}
 
-            {{{body}}}                
-
-        <footer>
-
-        	<h6 class="text-center">(c) 2018 Nicole Gould</h6>
-
-        </footer>
-
-    </div>
-
-</body>
-
-
-
+        <!--External JS Link-->
+        <script src="/assets/js/app.js"></script>
+    </body>
 </html>
